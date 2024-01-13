@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right bottom, #ffffff, #d3d3d3a2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 1.01;
+        transform: translateY(-1px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-into-animation {
+    animation: fadeIn 1s ease-in-out;
+}
